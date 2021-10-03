@@ -54,7 +54,7 @@ public class BallController : MonoBehaviour{
     private void SetRandomDirectionAndPosition(){
 
         float x = Random.Range(50, 100);
-        float y = Random.Range(50, 100);
+        float y = Random.Range(0, 100);
         float randomHigh = Random.Range(upLimit, downLimit);
         bool sign1 = (Random.Range(-10, 10) > 0);
         bool sign2 = (Random.Range(-10, 10) < 0);

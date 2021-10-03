@@ -29,6 +29,9 @@ public class GameController : MonoBehaviour {
     private void Start(){
         restartButton.onClick.AddListener(RestartGame);
         PauseButton.onClick.AddListener(PauseGame);
+        player1Velocity = player1.Velocity;
+        player2Velocity = player2.Velocity;
+        ballVelocity = ball.Velocity;
     }
     private void Update(){        
         if(PlayerCollisionDetected(player1) || PlayerCollisionDetected(player2)){
